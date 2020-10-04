@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Guideline PricesFragment-->
+    <dimen name="constraint_guideline_begin_one_pricesFragment">18dp</dimen>
+    <dimen name="constraint_guideline_end_one_pricesFragment">18dp</dimen>
+    <dimen name="constraint_guideline_begin_two_pricesFragment">0.836</dimen>
+    <dimen name="constraint_guideline_end_two_pricesFragment">0.1</dimen>
+
+    <!--CommonActionBar-->
+    <dimen name="icon_margin_start_image_view_commonActionBar">18dp</dimen>
+    <dimen name="title_size_text_view_commonActionBar">20sp</dimen>
+
+    <!--PricesFragment-->
+    <dimen name="arrow_down_margin_start_image_view_pricesFragment">18dp</dimen>
+    <dimen name="arrow_down_margin_end_image_view_pricesFragment">10dp</dimen>
+    <dimen name="text_global_market_cap_size_text_view_pricesFragment">16sp</dimen>
+    <dimen name="text_global_market_cap_margin_end_text_view_pricesFragment">6dp</dimen>
+    <dimen name="text_volume_usd42hr_size_text_view_pricesFragment">16sp</dimen>
+    <dimen name="text_volume_usd42hr_margin_end_text_view_pricesFragment">18dp</dimen>
+    <dimen name="text_volume_usd42hr_margin_top_text_view_pricesFragment">6dp</dimen>
+    <dimen name="text_volume_usd42hr_margin_bottom_text_view_pricesFragment">6dp</dimen>
+    <dimen name="search_margin_top_constraint_layout_pricesFragment">10dp</dimen>
+    <dimen name="search_size_edit_text_pricesFragment">18sp</dimen>
+    <dimen name="search_margin_start_edit_text_pricesFragment">18dp</dimen>
+    <dimen name="search_margin_end_edit_text_pricesFragment">18dp</dimen>
+    <dimen name="search_padding_top_edit_text_pricesFragment">12dp</dimen>
+    <dimen name="search_padding_bottom_edit_text_pricesFragment">13dp</dimen>
+    <dimen name="search_icon_margin_end_image_view_pricesFragment">18dp</dimen>
+    <dimen name="name_price_change_title_size_text_view_pricesFragment">14sp</dimen>
+    <dimen name="name_price_change_margin_end_text_view_pricesFragment">4dp</dimen>
+    <dimen name="name_price_change_title_margin_top_text_view_pricesFragment">18dp</dimen>
+    <dimen name="name_price_change_title_margin_end_text_view_pricesFragment">18dp</dimen>
+    <dimen name="assets_margin_top_recycler_view_pricesFragment">10dp</dimen>
+
+    <!--PricesFragment RecyclerItemView-->
+    <dimen name="horizontal_line_height_view_pricesFragmentRecyclerItemView">1dp</dimen>
+    <dimen name="symbol_width_text_view_pricesFragmentRecyclerItemView">42dp</dimen>
+    <dimen name="symbol_height_text_view_pricesFragmentRecyclerItemView">42dp</dimen>
+    <dimen name="symbol_size_text_view_pricesFragmentRecyclerItemView">12sp</dimen>
+    <dimen name="sl_no_size_text_view_pricesFragmentRecyclerItemView">14sp</dimen>
+    <dimen name="sl_no_margin_top_text_view_pricesFragmentRecyclerItemView">26dp</dimen>
+    <dimen name="sl_no_margin_bottom_text_view_pricesFragmentRecyclerItemView">25dp</dimen>
+    <dimen name="name_price_change_size_text_view_pricesFragmentRecyclerItemView">14sp</dimen>
+    <dimen name="name_price_change_margin_start_text_view_pricesFragmentRecyclerItemView">10dp</dimen>
+    <dimen name="name_price_change_margin_top_text_view_pricesFragmentRecyclerItemView">26dp</dimen>
+    <dimen name="name_price_change_margin_bottom_text_view_pricesFragmentRecyclerItemView">25dp</dimen>
+
+    <!--Guideline PricesFragmentRecyclerViewItem-->
+    <dimen name="constraint_guideline_begin_pricesFragmentRecyclerViewItem">0.068</dimen>
+    <dimen name="constraint_guideline_end_pricesFragmentRecyclerViewItem">0.86374694</dimen>
+
+</resources>

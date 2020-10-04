@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/RecyclerViewItemPricesFragmentConstraintLayout" tools:ignore="UnknownId" >
+
+    <View
+        style="@style/HorizontalLineViewPricesFragmentRecyclerViewItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        style="@style/SymbolRecyclerViewItemPricesFragment"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_sl_no_pricesFragment"
+        app:layout_constraintStart_toStartOf="@+id/guidelineBeginPricesFragmentRecyclerViewItem"
+        app:layout_constraintTop_toTopOf="@+id/tv_sl_no_pricesFragment" />
+
+    <TextView
+        style="@style/SLNoRecyclerViewItemPricesFragment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontal_line_view_pricesFragmentRecyclerViewItem" />
+
+    <TextView
+        style="@style/NameRecyclerViewItemPricesFragment"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_symbol_pricesFragment"
+        app:layout_constraintStart_toEndOf="@+id/tv_symbol_pricesFragment"
+        app:layout_constraintTop_toTopOf="@+id/tv_symbol_pricesFragment" />
+
+    <TextView
+        style="@style/PriceUSDRecyclerViewItemPricesFragment"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_change_percent24hr_pricesFragment"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEndPricesFragmentRecyclerViewItem"
+        app:layout_constraintTop_toTopOf="@+id/tv_change_percent24hr_pricesFragment" />
+
+    <TextView
+        style="@style/ChangePercent24hrRecyclerViewItemPricesFragment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontal_line_view_pricesFragmentRecyclerViewItem" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBeginPricesFragmentRecyclerViewItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="@dimen/constraint_guideline_begin_pricesFragmentRecyclerViewItem" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEndPricesFragmentRecyclerViewItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="@dimen/constraint_guideline_end_pricesFragmentRecyclerViewItem" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

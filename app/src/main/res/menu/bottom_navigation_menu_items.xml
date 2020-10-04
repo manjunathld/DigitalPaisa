@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/miv_prices_bottomNavigationItems"
+        android:enabled="true"
+        android:icon="@drawable/ic_prices"
+        android:title="@string/prices"/>
+
+    <item
+        android:id="@+id/miv_favorites_bottomNavigationItems"
+        android:enabled="true"
+        android:icon="@drawable/ic_favorites"
+        android:title="@string/favorites"/>
+
+    <item
+        android:id="@+id/miv_portfolio_bottomNavigationItems"
+        android:enabled="true"
+        android:icon="@drawable/ic_portfolio"
+        android:title="@string/portfolio"/>
+
+    <item
+        android:id="@+id/miv_news_bottomNavigationItems"
+        android:enabled="true"
+        android:icon="@drawable/ic_news"
+        android:title="@string/news"/>
+
+    <item
+        android:id="@+id/miv_invest_bottomNavigationItems"
+        android:enabled="true"
+        android:icon="@drawable/ic_invest"
+        android:title="@string/invest"/>
+
+</menu>

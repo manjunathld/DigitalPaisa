@@ -1,0 +1,218 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--General-->
+    <style name="ConstraintLayout" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="TextView" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="EditText" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ImageView" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="RecyclerView" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+    <style name="BottomNavigationView" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="View" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Guideline" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    
+    <!--CommonActionBar-->
+    <style name="CommonActionBarConstraintLayout" parent="@style/ConstraintLayout">
+        <item name="android:layout_height">?attr/actionBarSize</item>
+    </style>
+    <style name="MenuIconCommonActionBar" parent="@style/ImageView">
+        <item name="android:id">@id/iv_menu_icon_commonActionBar</item>
+        <item name="android:src">@drawable/ic_menu_black</item>
+        <item name="android:layout_marginStart">@dimen/icon_margin_start_image_view_commonActionBar</item>
+        <item name="android:contentDescription">@string/menu_icon</item>
+    </style>
+    <style name="TitleCommonActionBar" parent="@style/TextView">
+        <item name="android:id">@id/tv_title_commonActionBar</item>
+        <item name="android:text">@string/price</item>
+        <item name="android:textSize">@dimen/title_size_text_view_commonActionBar</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <!--PricesFragment-->
+    <style name="PricesFragmentConstraintLayout" parent="@style/ConstraintLayout">
+    </style>
+    <style name="IncludeCommonActionBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:id">@id/includeCommonActionBar</item>
+    </style>
+    <style name="GuidelineBeginOne" parent="@style/Guideline">
+        <item name="android:id">@id/guidelineBeginOne</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="GuidelineEndOne" parent="@style/Guideline">
+        <item name="android:id">@id/guidelineEndOne</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="GuidelineBeginTwo" parent="@style/Guideline">
+        <item name="android:id">@id/guidelineBeginTwo</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="GuidelineEndTwo" parent="@style/Guideline">
+        <item name="android:id">@id/guidelineEndTwo</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="GlobalMarketCapConstraintLayout" parent="@style/ConstraintLayout">
+        <item name="android:id">@id/cl_global_market_cap_priceFragment</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/colorGrayLightTwo</item>
+    </style>
+    <style name="ArrowDownGlobalMarketCapPricesFragment" parent="@style/ImageView">
+        <item name="android:id">@id/iv_arrow_down_global_market_cap_pricesFragment</item>
+        <item name="android:layout_marginStart">@dimen/arrow_down_margin_start_image_view_pricesFragment</item>
+        <item name="android:layout_marginEnd">@dimen/arrow_down_margin_end_image_view_pricesFragment</item>
+        <item name="android:contentDescription">@string/arrow_down_icon</item>
+        <item name="android:src">@drawable/ic_keyboard_arrow_down_black</item>
+    </style>
+    <style name="GlobalMarketCapPricesFragment" parent="@style/TextView">
+        <item name="android:id">@id/tv_global_market_cap_pricesFragment</item>
+        <item name="android:layout_marginEnd">@dimen/text_global_market_cap_margin_end_text_view_pricesFragment</item>
+        <item name="android:text">@string/global_market_cap</item>
+        <item name="android:textSize">@dimen/text_global_market_cap_size_text_view_pricesFragment</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="VolumeUSD24hrPricesFragment" parent="@style/TextView">
+        <item name="android:id">@id/tv_volume_usd24hr_pricesFragment</item>
+        <item name="android:layout_marginTop">@dimen/text_volume_usd42hr_margin_top_text_view_pricesFragment</item>
+        <item name="android:layout_marginBottom">@dimen/text_volume_usd42hr_margin_bottom_text_view_pricesFragment</item>
+        <item name="android:layout_marginEnd">@dimen/text_volume_usd42hr_margin_end_text_view_pricesFragment</item>
+        <item name="android:text">@string/empty</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/text_volume_usd42hr_size_text_view_pricesFragment</item>
+    </style>
+    <style name="SearchConstraintLayout" parent="@style/ConstraintLayout">
+        <item name="android:id">@id/cl_search_priceFragment</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginTop">@dimen/search_margin_top_constraint_layout_pricesFragment</item>
+        <item name="android:background">@drawable/common_search_option_background</item>
+    </style>
+    <style name="EditTextSearchCoinsPricesFragment" parent="@style/EditText">
+        <item name="android:id">@id/et_search_coins_pricesFragment</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/search_margin_start_edit_text_pricesFragment</item>
+        <item name="android:layout_marginEnd">@dimen/search_margin_end_edit_text_pricesFragment</item>
+        <item name="android:background">@color/colorTransparent</item>
+        <item name="android:hint">@string/search_coins</item>
+        <item name="android:inputType">textPersonName</item>
+        <item name="android:paddingTop">@dimen/search_padding_top_edit_text_pricesFragment</item>
+        <item name="android:paddingBottom">@dimen/search_padding_bottom_edit_text_pricesFragment</item>
+        <item name="android:textSize">@dimen/search_size_edit_text_pricesFragment</item>
+    </style>
+    <style name="SearchIconPricesFragment" parent="@style/ImageView">
+        <item name="android:id">@id/iv_search_icon_pricesFragment</item>
+        <item name="android:layout_marginEnd">@dimen/search_icon_margin_end_image_view_pricesFragment</item>
+        <item name="android:contentDescription">@string/search_icon</item>
+    </style>
+    <style name="NameTitleFragment" parent="@style/TextView">
+        <item name="android:id">@id/tv_name_recyclerViewItemPricesFragment</item>
+        <item name="android:textSize">@dimen/name_price_change_title_size_text_view_pricesFragment</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">@dimen/name_price_change_title_margin_top_text_view_pricesFragment</item>
+        <item name="android:text">@string/name</item>
+    </style>
+    <style name="PriceTitlePricesFragment" parent="@style/TextView">
+        <item name="android:id">@id/tv_price_title_pricesFragment</item>
+        <item name="android:text">@string/price</item>
+        <item name="android:textSize">@dimen/name_price_change_title_size_text_view_pricesFragment</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginEnd">@dimen/name_price_change_margin_end_text_view_pricesFragment</item>
+    </style>
+    <style name="ChangeTitlePricesFragment" parent="@style/TextView">
+        <item name="android:id">@id/tv_change_title_pricesFragment</item>
+        <item name="android:layout_marginEnd">@dimen/name_price_change_title_margin_end_text_view_pricesFragment</item>
+        <item name="android:text">@string/change</item>
+        <item name="android:textSize">@dimen/name_price_change_title_size_text_view_pricesFragment</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="RecyclerViewSssetsPricesFragment" parent="@style/RecyclerView">
+        <item name="android:id">@id/rv_assets_pricesFragment</item>
+        <item name="android:layout_marginTop">@dimen/assets_margin_top_recycler_view_pricesFragment</item>
+    </style>
+    <style name="BottomNavigationViewPptionsPricesFragment" parent="@style/BottomNavigationView">
+        <item name="android:id">@id/bnv_options_pricesFragment</item>
+    </style>
+
+    <!--RecyclerView PricesFragment-->
+    <style name="RecyclerViewItemPricesFragmentConstraintLayout" parent="@style/ConstraintLayout">
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="HorizontalLineViewPricesFragmentRecyclerViewItem" parent="@style/View">
+        <item name="android:id">@id/horizontal_line_view_pricesFragmentRecyclerViewItem</item>
+        <item name="android:layout_height">@dimen/horizontal_line_height_view_pricesFragmentRecyclerItemView</item>
+        <item name="android:background">@color/colorGrayLightTwo</item>
+    </style>
+    <style name="SymbolRecyclerViewItemPricesFragment" parent="@style/TextView">
+        <item name="android:id">@id/tv_symbol_pricesFragment</item>
+        <item name="android:layout_width">@dimen/symbol_width_text_view_pricesFragmentRecyclerItemView</item>
+        <item name="android:layout_height">@dimen/symbol_height_text_view_pricesFragmentRecyclerItemView</item>
+        <item name="android:background">@drawable/symbol_text_background</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">@string/empty</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/symbol_size_text_view_pricesFragmentRecyclerItemView</item>
+    </style>
+    <style name="SLNoRecyclerViewItemPricesFragment" parent="@style/TextView">
+        <item name="android:id">@id/tv_sl_no_pricesFragment</item>
+        <item name="android:text">@string/empty</item>
+        <item name="android:textSize">@dimen/sl_no_size_text_view_pricesFragmentRecyclerItemView</item>
+        <item name="android:layout_marginTop">@dimen/sl_no_margin_top_text_view_pricesFragmentRecyclerItemView</item>
+        <item name="android:layout_marginBottom">@dimen/sl_no_margin_bottom_text_view_pricesFragmentRecyclerItemView</item>
+    </style>
+    <style name="NameRecyclerViewItemPricesFragment" parent="@style/TextView">
+        <item name="android:id">@id/tv_name_recyclerViewItemPricesFragment</item>
+        <item name="android:textSize">@dimen/name_price_change_size_text_view_pricesFragmentRecyclerItemView</item>
+        <item name="android:layout_marginStart">@dimen/name_price_change_margin_start_text_view_pricesFragmentRecyclerItemView</item>
+        <item name="android:text">@string/empty</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+    <style name="PriceUSDRecyclerViewItemPricesFragment" parent="@style/TextView">
+        <item name="android:id">@id/tv_price_usd_pricesFragment</item>
+        <item name="android:textSize">@dimen/name_price_change_size_text_view_pricesFragmentRecyclerItemView</item>
+        <item name="android:text">@string/empty</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginEnd">@dimen/name_price_change_margin_end_text_view_pricesFragment</item>
+    </style>
+    <style name="ChangePercent24hrRecyclerViewItemPricesFragment" parent="@style/TextView">
+        <item name="android:id">@id/tv_change_percent24hr_pricesFragment</item>
+        <item name="android:textSize">@dimen/name_price_change_size_text_view_pricesFragmentRecyclerItemView</item>
+        <item name="android:layout_marginTop">@dimen/name_price_change_margin_top_text_view_pricesFragmentRecyclerItemView</item>
+        <item name="android:layout_marginBottom">@dimen/name_price_change_margin_bottom_text_view_pricesFragmentRecyclerItemView</item>
+        <item name="android:text">@string/empty</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

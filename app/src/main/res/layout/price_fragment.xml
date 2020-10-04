@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/PricesFragmentConstraintLayout"
+    tools:context=".prices.view.PriceFragment"
+    tools:ignore="UnknownId" >
+
+    <include
+        style="@style/IncludeCommonActionBar"
+        layout="@layout/common_actionbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        style="@style/GuidelineBeginOne"
+        app:layout_constraintGuide_begin="@dimen/constraint_guideline_begin_one_pricesFragment" />
+
+    <androidx.constraintlayout.widget.Guideline
+        style="@style/GuidelineEndOne"
+        app:layout_constraintGuide_end="@dimen/constraint_guideline_end_one_pricesFragment" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/GlobalMarketCapConstraintLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/includeCommonActionBar">
+
+        <ImageView
+            style="@style/ArrowDownGlobalMarketCapPricesFragment"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_global_market_cap_pricesFragment"
+            app:layout_constraintEnd_toStartOf="@+id/tv_global_market_cap_pricesFragment"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tv_global_market_cap_pricesFragment"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            style="@style/GlobalMarketCapPricesFragment"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_volume_usd24hr_pricesFragment"
+            app:layout_constraintEnd_toStartOf="@+id/tv_volume_usd24hr_pricesFragment"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/iv_arrow_down_global_market_cap_pricesFragment"
+            app:layout_constraintTop_toTopOf="@+id/tv_volume_usd24hr_pricesFragment"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            style="@style/VolumeUSD24hrPricesFragment"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tv_global_market_cap_pricesFragment"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_search_priceFragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/search_margin_top_constraint_layout_pricesFragment"
+        android:background="@drawable/common_search_option_background"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEndOne"
+        app:layout_constraintStart_toStartOf="@+id/guidelineBeginOne"
+        app:layout_constraintTop_toBottomOf="@+id/cl_global_market_cap_priceFragment">
+
+        <EditText
+            style="@style/EditTextSearchCoinsPricesFragment"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/iv_search_icon_pricesFragment"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            style="@style/SearchIconPricesFragment"
+            app:layout_constraintBottom_toBottomOf="@+id/et_search_coins_pricesFragment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/et_search_coins_pricesFragment"
+            app:srcCompat="@drawable/ic_search_black" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        style="@style/NameTitleFragment"
+        app:layout_constraintStart_toStartOf="@+id/guidelineBeginTwo"
+        app:layout_constraintTop_toBottomOf="@+id/cl_search_priceFragment" />
+
+    <TextView
+        style="@style/PriceTitlePricesFragment"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_name_recyclerViewItemPricesFragment"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEndTwo"
+        app:layout_constraintTop_toTopOf="@+id/tv_name_recyclerViewItemPricesFragment" />
+
+    <TextView
+        style="@style/ChangeTitlePricesFragment"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_price_title_pricesFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_price_title_pricesFragment" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        style="@style/RecyclerViewSssetsPricesFragment"
+        app:layout_constraintBottom_toTopOf="@+id/bnv_options_pricesFragment"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEndOne"
+        app:layout_constraintStart_toStartOf="@+id/guidelineBeginOne"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name_recyclerViewItemPricesFragment"
+        tools:listitem="@layout/price_fragment_recycler_view_item" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        style="@style/BottomNavigationViewPptionsPricesFragment"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation_menu_items" />
+
+    <androidx.constraintlayout.widget.Guideline
+        style="@style/GuidelineBeginTwo"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="@dimen/constraint_guideline_end_two_pricesFragment" />
+
+    <androidx.constraintlayout.widget.Guideline
+        style="@style/GuidelineEndTwo"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="@dimen/constraint_guideline_begin_two_pricesFragment" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
